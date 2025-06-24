@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site exemplo css</title>
+    <style>
+        /* CSS Interno */
+        body {
+            background-color: rgba(117, 255, 83, 0.281); /* Cor de fundo do site */
+            font-family: Arial, Helvetica, sans-serif; /* Tipo de fonte */
+            margin: 20px /* Margem do elemento */
+
+        }
+
+        h1 {
+            color: #ff00dd; /*Define a cor do texto*/
+            display: flex; /*Transforma o elemento em um contêiner flexível. Isso significa que os elementos filhos (dentro dele) poderão ser organizados de forma mais eficiente em linha ou coluna.*/
+            justify-content: center; /*Altera a posição dos itens horizontalmente*/
+            border-bottom: 3px solid #2980b9; /*Borda na parte inferior do elemento*/
+            padding-bottom: 10px; /* Espaçamento na parte inferior*/
+        }
+
+        p {
+            color: #b9af29; /*Define a cor do texto*/
+            font-size: 18px; /* Tamanho da fonte do texto */
+        }
+
+        .imagem-principal {
+            width: 400px; /* Largura da imagem */
+            border: 0px solid blue; /* Borda da imagem*/
+            height: auto; /*Altura da imagem*/
+        }
+
+        .destaque {
+            color: red; /* Cor do texto */
+            font-weight: bold; /* Negrito */
+        }
+    </style>
+</head>
+
+<body> <!-- ATENÇÃO: class serve para atribuir um nome a um ou mais elementos, permitindo que você os estilize com CSS-->
+    <h1>Bem vindo ao meu site</h1>
+    <img class="imagem-principal" 
+        src="./assets/img/mande-a-imagem-mais-aleatória-e-estranha-da-sua-galeria-v0-1pfrwchudfkd1.png" alt="Gato Velho"> <!-- "img" serve para atribuir uma imagem ao site, "alt" é a descrição da imagem-->
+
+    <p id="texto"> Este site foi desenvolvido no SENAC Nova Iguaçu.</p>
+
+    <p class="destaque">Destaque: Nossos alunos estão aprendendo CSS</p>
+</body>
+
+</html>
